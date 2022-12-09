@@ -1,0 +1,52 @@
+
+label {
+    float: left;
+    clear: none;
+    display: block;
+    padding: 0px 1em 0px 8px;
+}
+fieldset{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    background-color: bisque;
+    margin-bottom: 20px;
+}
+input{
+    margin-left: 20px;
+    cursor: pointer;
+}
+#select{
+    border: #66CDAA 1px solid;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.button2{
+    visibility: hidden;
+    position: absolute;
+    top: 47%;
+    left: 44%;
+    width: 10vw;
+    height: 10vh;
+    box-shadow: 0.5rem 0.5rem black;
+    background: #66CDAA;
+    border-radius: 10px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.overlay {
+    visibility: hidden;
+    opacity: 0.5;
+    background: black;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100vw; height: 100vw;
+    z-index: 99;
+}
+
+.selectColor{
+    background: red;
+}

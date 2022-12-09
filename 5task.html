@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5 task</title>
+</head>
+<style type="text/css">
+    .menu-item {
+        border: 2px solid #66CDAA;
+        background: salmon;
+        float: left;
+        position: relative;
+        cursor: pointer;
+        width: 100px;
+        height: 30px;
+        font-size: 20px;
+        border: 1px solid black;
+    }
+
+    .menu-item .submenu {
+        transition: 0.3s ease-in-out;
+        visibility: hidden;
+        width: 100px;
+        border: 1px solid black;
+        background: salmon;
+        position: absolute;
+        top: 30px;
+        cursor: pointer;
+    }
+
+    #nav {
+        margin: 0 450px
+    }
+</style>
+<body>
+<div id="nav" onmouseover="onmouse(event)">
+    <div class="menu-item">
+        JS
+        <div class="submenu">
+            React
+        </div>
+    </div>
+    <div class="menu-item">
+        JS
+        <div class="submenu">
+            Query
+        </div>
+    </div>
+    <div class="menu-item">
+        JS
+        <div class="submenu">
+            Node.js
+        </div>
+    </div>
+</div>
+<script src="5task.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1 task</title>
+    <style>
+        h1 {
+            position: absolute;
+            border: 2px dotted hotpink;
+            z-index: 2;
+            color: yellow;
+            font-size: 100px;
+            left: 800px;
+            top: 100px;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+        }
+
+        .sky {
+            z-index: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .sun {
+            z-index: 1;
+            top: 100px;
+            left: 500px
+        }
+
+    </style>
+</head>
+<body>
+<h1 onclick="moving()" class="text">Передвинь меня мышкой</h1>
+<img onclick="moving()" src="https://cdn-icons-png.flaticon.com/512/5903/5903519.png" alt="" width="300" class="sun">
+<img src="images/sky.png" class="sky">
+<script src="1task.js"></script>
+</body>
+</html>

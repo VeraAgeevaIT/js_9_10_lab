@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:;base64,=">
+    <title>4 task</title>
+    <link rel="stylesheet" href="4task.css">
+</head>
+<body>
+<audio src="sounds/Sound_1.mp3" id="my_audio" autoplay></audio>
+<audio
+        muted="muted"
+        src="/sounds/Sound4.mp3">
+    <a href="/sounds/Sound4.mp3">
+        Download audio
+    </a>
+</audio>
+<h1>Пожалуйста, сдалайте выбор графика функции и
+    <select id="select" onchange="changeColor(this);" class="selectColor">
+        <option value="red" id="red">Красный</option>
+        <option value="yellow" id="yellow">Желтый</option>
+        <option value="green" id="green">Зеленый</option>
+    </select>
+    линии:
+</h1>
+<form action="" onsubmit="draw()" class="form">
+
+    <fieldset class="fieldset" onchange="voice2()">
+        <input type="radio" name="paint" value="1" id="one">
+        <label for="one">y = x^2 </label>
+        <input type="radio" name="paint" value="2" id="two">
+        <label for="two">y = x^3 </label>
+        <input type="radio" name="paint" value="3" id="three">
+        <label for="three">y = sin(x)</label>
+        <input type="radio" name="paint" value="4" id="four">
+        <label for="four">y = cos(x) </label>
+        <input type="radio" name="paint" value="5" id="five">
+        <label for="four">y = log(x) </label>
+    </fieldset>
+
+
+    <button class="button1" type="submit">Начертить</button>
+
+</form>
+
+<div class="overlay"></div>
+<button class="button2" onclick="again()"> Еще ?</button>
+
+<script async src="4task.js"></script>
+</body>
+</html>
